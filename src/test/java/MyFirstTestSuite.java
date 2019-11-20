@@ -14,6 +14,13 @@ public class MyFirstTestSuite extends TestConfigFootball {
                 all().statusCode(404);
     }
     @Test
+    public void mySecondTest() {
+        given().
+                when().spec(football_RequestSpec).get("355/leagueTable").
+                then().log().
+                all().statusCode(200);
+    }
+    @Test
     public void getAllCompetitionsInfo() {
         given().
                 when().spec(football_RequestSpec).get(GET_COMPETITIONS).
