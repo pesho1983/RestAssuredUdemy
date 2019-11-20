@@ -13,7 +13,7 @@ public class MyFirstTestSuite extends TestConfigFootball {
                 then().log().
                 all().statusCode(404);
     }
-    
+
     @Test
     public void getAllCompetitionsInfo() {
         given().
